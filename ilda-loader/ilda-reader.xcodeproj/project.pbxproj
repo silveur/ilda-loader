@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542E367C24C46EAE00C79AB7 /* Palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 542E367624C46EAE00C79AB7 /* Palette.h */; };
+		542E367D24C46EAE00C79AB7 /* Palette.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 542E367724C46EAE00C79AB7 /* Palette.cpp */; };
+		542E367E24C46EAE00C79AB7 /* IldaFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 542E367824C46EAE00C79AB7 /* IldaFrame.cpp */; };
+		542E367F24C46EAE00C79AB7 /* IldaFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 542E367924C46EAE00C79AB7 /* IldaFrame.h */; };
+		542E368024C46EAE00C79AB7 /* IldaFrames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 542E367A24C46EAE00C79AB7 /* IldaFrames.cpp */; };
+		542E368124C46EAE00C79AB7 /* IldaFrames.h in Headers */ = {isa = PBXBuildFile; fileRef = 542E367B24C46EAE00C79AB7 /* IldaFrames.h */; };
 		544C5DFD24C45C6700B6BC20 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 544C5DFC24C45C6700B6BC20 /* info.plist */; };
 		544C5DFF24C45DA300B6BC20 /* maxmspsdk.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 544C5DFE24C45DA300B6BC20 /* maxmspsdk.xcconfig */; };
-		544C5E0124C45EBE00B6BC20 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 544C5E0024C45EBE00B6BC20 /* main.c */; };
+		544C5E0124C45EBE00B6BC20 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544C5E0024C45EBE00B6BC20 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FBBEAE508F335360078DB84 /* ildareader.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ildareader.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		542E367624C46EAE00C79AB7 /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Palette.h; path = ../../lib/Palette.h; sourceTree = "<group>"; };
+		542E367724C46EAE00C79AB7 /* Palette.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Palette.cpp; path = ../../lib/Palette.cpp; sourceTree = "<group>"; };
+		542E367824C46EAE00C79AB7 /* IldaFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IldaFrame.cpp; path = ../../lib/IldaFrame.cpp; sourceTree = "<group>"; };
+		542E367924C46EAE00C79AB7 /* IldaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IldaFrame.h; path = ../../lib/IldaFrame.h; sourceTree = "<group>"; };
+		542E367A24C46EAE00C79AB7 /* IldaFrames.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IldaFrames.cpp; path = ../../lib/IldaFrames.cpp; sourceTree = "<group>"; };
+		542E367B24C46EAE00C79AB7 /* IldaFrames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IldaFrames.h; path = ../../lib/IldaFrames.h; sourceTree = "<group>"; };
 		544C5DFC24C45C6700B6BC20 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		544C5DFE24C45DA300B6BC20 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
-		544C5E0024C45EBE00B6BC20 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		544C5E0024C45EBE00B6BC20 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,9 +45,10 @@
 		089C166AFE841209C02AAC07 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
+				542E367524C46E9D00C79AB7 /* lib */,
 				544C5DFE24C45DA300B6BC20 /* maxmspsdk.xcconfig */,
 				544C5DFC24C45C6700B6BC20 /* info.plist */,
-				544C5E0024C45EBE00B6BC20 /* main.c */,
+				544C5E0024C45EBE00B6BC20 /* main.cpp */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
 			);
 			name = iterator;
@@ -49,6 +62,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		542E367524C46E9D00C79AB7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				542E367824C46EAE00C79AB7 /* IldaFrame.cpp */,
+				542E367924C46EAE00C79AB7 /* IldaFrame.h */,
+				542E367A24C46EAE00C79AB7 /* IldaFrames.cpp */,
+				542E367B24C46EAE00C79AB7 /* IldaFrames.h */,
+				542E367724C46EAE00C79AB7 /* Palette.cpp */,
+				542E367624C46EAE00C79AB7 /* Palette.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -56,6 +82,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542E368124C46EAE00C79AB7 /* IldaFrames.h in Headers */,
+				542E367F24C46EAE00C79AB7 /* IldaFrame.h in Headers */,
+				542E367C24C46EAE00C79AB7 /* Palette.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544C5E0124C45EBE00B6BC20 /* main.c in Sources */,
+				542E367E24C46EAE00C79AB7 /* IldaFrame.cpp in Sources */,
+				544C5E0124C45EBE00B6BC20 /* main.cpp in Sources */,
+				542E367D24C46EAE00C79AB7 /* Palette.cpp in Sources */,
+				542E368024C46EAE00C79AB7 /* IldaFrames.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

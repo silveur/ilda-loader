@@ -6,7 +6,31 @@
 	<dict>
 		<key>Resources/info.plist</key>
 		<data>
-		fDeLRMUA8OJZT/dnoTdslubbiTs=
+		nW9u1tOf+O0bBcYoV50e9/ZytKE=
+		</data>
+		<key>Resources/lib/IldaFrame.cpp</key>
+		<data>
+		tyr4R2Ty89QtD5HSgVgBEuKTmks=
+		</data>
+		<key>Resources/lib/IldaFrame.h</key>
+		<data>
+		IrxfwkmapN6GmTV6bsEe5h0qagI=
+		</data>
+		<key>Resources/lib/IldaFrames.cpp</key>
+		<data>
+		o8k+ULIK3dCqxkxCK4sHkFRU9Zg=
+		</data>
+		<key>Resources/lib/IldaFrames.h</key>
+		<data>
+		XPhPPr0yHCwid3MQsS3/R2mHRck=
+		</data>
+		<key>Resources/lib/Palette.cpp</key>
+		<data>
+		H0tj9JloVEeg/51sC0dg9FcN124=
+		</data>
+		<key>Resources/lib/Palette.h</key>
+		<data>
+		qXfP5kn/nADEx5JPHzRmfw0Nk1k=
 		</data>
 		<key>Resources/maxmspsdk.xcconfig</key>
 		<data>
@@ -19,11 +43,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fDeLRMUA8OJZT/dnoTdslubbiTs=
+			nW9u1tOf+O0bBcYoV50e9/ZytKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			65PMaOZI3Cxph+P0790yRfiCmZuo4Ed/Y1vAg7Jg5KI=
+			DPLUvTJWFCTMSP8m9+V7g0GbYXZph7rFAf69CWZ4SGE=
+			</data>
+		</dict>
+		<key>Resources/lib/IldaFrame.cpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tyr4R2Ty89QtD5HSgVgBEuKTmks=
+			</data>
+			<key>hash2</key>
+			<data>
+			doehcMRsiHWwgvby2D6xZQAJzFJDlUPuRP91EuisZcs=
+			</data>
+		</dict>
+		<key>Resources/lib/IldaFrame.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IrxfwkmapN6GmTV6bsEe5h0qagI=
+			</data>
+			<key>hash2</key>
+			<data>
+			GWmbFDR2Pg2B6hdqKW4gjjIcoRPysKw+aMqrInscwhM=
+			</data>
+		</dict>
+		<key>Resources/lib/IldaFrames.cpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o8k+ULIK3dCqxkxCK4sHkFRU9Zg=
+			</data>
+			<key>hash2</key>
+			<data>
+			nPUMI50uCekknOLYnMGttpg7Ut9HF21qeWqOV94A10w=
+			</data>
+		</dict>
+		<key>Resources/lib/IldaFrames.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XPhPPr0yHCwid3MQsS3/R2mHRck=
+			</data>
+			<key>hash2</key>
+			<data>
+			kZUZ+TdDPCUCVInCtX2xfXA67tHq2wX75D7afpr6rJQ=
+			</data>
+		</dict>
+		<key>Resources/lib/Palette.cpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H0tj9JloVEeg/51sC0dg9FcN124=
+			</data>
+			<key>hash2</key>
+			<data>
+			81GFpKnTXfDAlcQi8AC2VoDgQcGSCdMTAKVjRK1BVnM=
+			</data>
+		</dict>
+		<key>Resources/lib/Palette.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qXfP5kn/nADEx5JPHzRmfw0Nk1k=
+			</data>
+			<key>hash2</key>
+			<data>
+			RFpMK0Xzk8XW8RDJZ82eCPpq+83l+PlLJkAwZOffOLI=
 			</data>
 		</dict>
 		<key>Resources/maxmspsdk.xcconfig</key>
