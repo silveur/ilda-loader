@@ -1,7 +1,7 @@
 #ifndef PALETTE_H
 #define PALETTE_H
 
-
+#include <stdint.h>
 struct paletteStruct
 {
     uint8_t red;
