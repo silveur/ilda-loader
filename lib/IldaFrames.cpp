@@ -72,27 +72,28 @@ void IldaFrames::initIldaPalette()
 
 
 
-bool IldaFrames::seekIlda (fstream &file)  const
+bool IldaFrames::seekIlda (istream &file)  const
 {
-    uint8_t c1 = 0;
-    uint8_t c2 = 0;
-    uint8_t c3 = 0;
-    uint8_t c4 = 0;
+   
+     char c1 = 0;
+      char c2 = 0;
+      char c3 = 0;
+      char c4 = 0;
 
-    do
-    {
-        c1 = c2;
-        c2 = c3;
-        c3 = c4;
+      do
+      {
+          c1 = c2;
+          c2 = c3;
+          c3 = c4;
+          file.read (&c4, 1);
+          if (file.eof())
+          {
+              return (false);
+          }
+      }
+      while ((c1 != 'I') || (c2 != 'L') || (c3 != 'D') || (c4 != 'A'));
 
-        if (file.good())
-        {
-            return (false);
-        }
-    }
-    while ((c1 != 'I') || (c2 != 'L') || (c3 != 'D') || (c4 != 'A'));
-
-    return (true);
+      return (true);
 }
 
 
@@ -107,8 +108,7 @@ string IldaFrames::openIldaFile(const string &fileName)
         return string("No file specified!");
     }
 
-
-    fstream file(fileName);
+    ifstream file (fileName, std::ifstream::binary);
 
     if (! file)
     {
@@ -120,7 +120,7 @@ string IldaFrames::openIldaFile(const string &fileName)
 
     for (;;)
     {
-        uint8_t header[32];
+      char * header = new char [32];
 
         if (! seekIlda(file))
         {
@@ -146,7 +146,9 @@ string IldaFrames::openIldaFile(const string &fileName)
 
         anyIlda = true;
 
-
+      
+        file.read (&header[4], 28);
+        std::cout << header << std::endl;
 //        if (file.read((char *) &header[4], 28) != 28)
 //        {
 //            file.close();
@@ -215,14 +217,15 @@ string IldaFrames::openIldaFile(const string &fileName)
 
                 for (i = 0; i < numberOfRecords; i++)
                 {
-                  uint8_t buffer[8];
-                  std::string line;
-                  std::getline(file, line);
-                  if (line.length() != 8)
-                    {
-                        file.close();
-                        return string("Invalid data section (Format 0)!");
-                    }
+                  std::cout << "Record:" + to_string(i) << std::endl;
+                  char * buffer = new char [8];
+                  file.read (buffer, 8);
+                  std::cout << buffer << std::endl;
+//                  if (is)
+//                    {
+//                        file.close();
+//                        return string("Invalid data section (Format 0)!");
+//                    }
 
                     IldaPoint point;
 

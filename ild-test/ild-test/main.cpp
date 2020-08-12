@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
   
   IldaFrames* reader = new IldaFrames();
   
-  reader->openFile("/Users/silvereletellier/Downloads/LaserStuff/Import\ of\ ILDA\ frames\ in\ Max:MSP/Testfiles/ildatest.ild");
+  reader->openFile("/Users/silvereletellier/dev/ilda-loader/files/ildatest.ild");
   
   // insert code here...
   std::cout << "Hello, World!\n";

@@ -25,7 +25,7 @@ private:
     //
     void             initIldaPalette        ();
 
-    bool             seekIlda               (fstream &file)  const;
+    bool             seekIlda               (istream &file)  const;
 
     string          openIldaFile           (const string &fileName);
 
